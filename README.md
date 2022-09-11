@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/Odalloc/interactive-rating-component.git
+- Solution URL: https://github.com/Odalloc/interactive-rating-component
 - Live Site URL: https://odalloc.github.io/interactive-rating-component/
 
 ### Built with
