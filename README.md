@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: Frontend Mentor (https://github.com/Odalloc/interactive-rating-component.git)
-- Live Site URL: (https://odalloc.github.io/interactive-rating-component/)
+- Solution URL: https://github.com/Odalloc/interactive-rating-component.git
+- Live Site URL: https://odalloc.github.io/interactive-rating-component/
 
 ### Built with
 
