@@ -1,0 +1,91 @@
+@use "../abstracts/variables" as color;
+@use "../abstracts/mixins";
+
+.card {
+  width: max(300px, 400px);
+  height: 400px;
+  @include mixins.cardStyle(color.$darkBlue, color.$white, 30px, 30px);
+  margin: 10px;
+
+  .star-icon {
+    @include mixins.cardStyle(color.$lightBlue, color.$orange, 50%, 13px);
+    width: 40px;
+  }
+
+  h2 {
+    color: color.$white;
+    margin-block: 20px;
+  }
+
+  p {
+    color: color.$lightGrey;
+  }
+
+  .ratings {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-block: 25px;
+
+    .rate-num {
+      @include mixins.cardStyle(color.$darkGrey, color.$lightGrey, 50%, 5px);
+      width: 45px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      border: none;
+      outline: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: color.$lightGrey;
+        color: color.$white;
+      }
+
+      &:focus {
+        background-color: color.$orange;
+        color: color.$white;
+        border: thin solid color.$veryDarkGrey;
+      }
+    }
+  }
+
+  #submit-btn {
+    @include mixins.cardStyle(color.$orange, color.$white, 25px, 15px);
+    font-weight: 700;
+    letter-spacing: 2px;
+    width: 100%;
+    border: thin solid color.$veryDarkGrey;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+      color: color.$orange;
+      background-color: color.$white;
+    }
+  }
+}
+
+.thank-you-card {
+  text-align: center;
+
+  .thank-you-icon {
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  .selected-rate {
+    margin-block: 30px;
+
+    span {
+      @include mixins.cardStyle(
+        color.$lightBlue,
+        color.$orange,
+        20px,
+        5px 10px
+      );
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@mixin cardStyle($bgColor, $color, $bgRadius, $padding) {
+  background-color: $bgColor;
+  color: $color;
+  border-radius: $bgRadius;
+  padding: $padding;
+}

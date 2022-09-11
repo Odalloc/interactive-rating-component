@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(216deg, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+}
+
+p {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.card {
+  width: 400px;
+  height: 400px;
+  background-color: hsl(213deg, 19%, 18%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 30px;
+  padding: 30px;
+  margin: 10px;
+}
+.card .star-icon {
+  background-color: hsl(213deg, 19%, 21%);
+  color: hsl(25deg, 97%, 53%);
+  border-radius: 50%;
+  padding: 13px;
+  width: 40px;
+}
+.card h2 {
+  color: hsl(0deg, 0%, 100%);
+  margin-block: 20px;
+}
+.card p {
+  color: hsl(217deg, 12%, 63%);
+}
+.card .ratings {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-block: 25px;
+}
+.card .ratings .rate-num {
+  background-color: hsl(208deg, 11%, 24%);
+  color: hsl(217deg, 12%, 63%);
+  border-radius: 50%;
+  padding: 5px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.card .ratings .rate-num:hover {
+  background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+}
+.card .ratings .rate-num:focus {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  border: thin solid #111;
+}
+.card #submit-btn {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 25px;
+  padding: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  width: 100%;
+  border: thin solid #111;
+  outline: none;
+  cursor: pointer;
+}
+.card #submit-btn:hover {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.thank-you-card {
+  text-align: center;
+}
+.thank-you-card .thank-you-icon {
+  width: 50%;
+  margin-top: 20px;
+}
+.thank-you-card .selected-rate {
+  margin-block: 30px;
+}
+.thank-you-card .selected-rate span {
+  background-color: hsl(213deg, 19%, 21%);
+  color: hsl(25deg, 97%, 53%);
+  border-radius: 20px;
+  padding: 5px 10px;
+}/*# sourceMappingURL=styles.css.map */
